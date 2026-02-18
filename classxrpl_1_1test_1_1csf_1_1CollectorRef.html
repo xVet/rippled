@@ -83,7 +83,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Holds a type-erased reference to an arbitray collector.  
+<p>Holds a type-erased reference to an arbitrary collector.  
  <a href="classxrpl_1_1test_1_1csf_1_1CollectorRef.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>&gt;</code></p>
@@ -92,7 +92,7 @@ Collaboration diagram for xrpl::test::csf::CollectorRef:</div>
 <div class="dyncontent">
 <div class="center"><img src="classxrpl_1_1test_1_1csf_1_1CollectorRef__coll__graph.png" border="0" usemap="#axrpl_1_1test_1_1csf_1_1CollectorRef_coll__map" alt="Collaboration graph"/></div>
 <map name="axrpl_1_1test_1_1csf_1_1CollectorRef_coll__map" id="axrpl_1_1test_1_1csf_1_1CollectorRef_coll__map">
-<area shape="rect" title="Holds a type&#45;erased reference to an arbitray collector." alt="" coords="5,225,200,251"/>
+<area shape="rect" title="Holds a type&#45;erased reference to an arbitrary collector." alt="" coords="5,225,200,251"/>
 <area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" title=" " alt="" coords="18,108,187,163"/>
 <area shape="poly" title=" " alt="" coords="105,176,105,225,100,225,100,176"/>
 <area shape="rect" href="structxrpl_1_1test_1_1csf_1_1CollectorRef_1_1ICollector.html" title=" " alt="" coords="17,5,189,45"/>
@@ -135,7 +135,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a53ec1b3a0f7e54c80760b5757e104a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Holds a type-erased reference to an arbitray collector. </p>
+<div class="textblock"><p>Holds a type-erased reference to an arbitrary collector. </p>
 <p>A collector is any class that implements </p><pre class="fragment">on(NodeID, SimTime, Event)
 </pre><p> for all events emitted by a <a class="el" href="structxrpl_1_1test_1_1csf_1_1Peer.html" title="A single peer in the simulation.">Peer</a>.</p>
 <p>This class is used to type-erase the actual collector used by each peer in the simulation. The idea is to compose complicated and typed collectors using the helpers in <a class="el" href="collectors_8h_source.html">collectors.h</a>, then only type erase at the higher-most level when adding to the simulation.</p>
@@ -151,10 +151,10 @@ Private Attributes</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// do any reported related to the collector</span></div>
 <div class="line">collector.report();</div>
-<div class="ttc" id="aclassxrpl_1_1test_1_1csf_1_1Sim_html"><div class="ttname"><a href="classxrpl_1_1test_1_1csf_1_1Sim.html">xrpl::test::csf::Sim</a></div><div class="ttdef"><b>Definition</b> <a href="Sim_8h_source.html#l00051">Sim.h:52</a></div></div>
+<div class="ttc" id="aclassxrpl_1_1test_1_1csf_1_1Sim_html"><div class="ttname"><a href="classxrpl_1_1test_1_1csf_1_1Sim.html">xrpl::test::csf::Sim</a></div><div class="ttdef"><b>Definition</b> <a href="Sim_8h_source.html#l00046">Sim.h:47</a></div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>If a new event type is added, it needs to be added to the interfaces below. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00050">50</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00049">49</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4fea875d9095af34563e5b3debf1507c" name="a4fea875d9095af34563e5b3debf1507c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fea875d9095af34563e5b3debf1507c">&#9670;&#160;</a></span>tp</h2>
@@ -176,7 +176,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00052">52</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00051">51</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
 
 </div>
 </div>
@@ -199,7 +199,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00274">274</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00273">273</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
 
 </div>
 </div>
@@ -342,7 +342,7 @@ template&lt;class E &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00289">289</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00288">288</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ template&lt;class E &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00270">270</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CollectorRef_8h_source.html#l00269">269</a> of file <a class="el" href="CollectorRef_8h_source.html">CollectorRef.h</a>.</p>
 
 </div>
 </div>

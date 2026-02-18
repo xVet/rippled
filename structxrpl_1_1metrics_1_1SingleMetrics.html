@@ -125,14 +125,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae51c31a04f7e1cc28ddf448fa50cf3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24fde2f5bfd004d89ae8c515b4d84c4d" id="r_a24fde2f5bfd004d89ae8c515b4d84c4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxrpl_1_1metrics_1_1SingleMetrics.html#a24fde2f5bfd004d89ae8c515b4d84c4d">perTimeUnit</a> {true}</td></tr>
 <tr class="separator:a24fde2f5bfd004d89ae8c515b4d84c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f26140c709d1f498d50011f8820243" id="r_a02f26140c709d1f498d50011f8820243"><td class="memItemLeft" align="right" valign="top">boost::circular_buffer&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxrpl_1_1metrics_1_1SingleMetrics.html#a02f26140c709d1f498d50011f8820243">rollingAvgAggreg</a> {30, 0ull}</td></tr>
-<tr class="separator:a02f26140c709d1f498d50011f8820243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351a819fa00fbecab221d0a7c41ca05d" id="r_a351a819fa00fbecab221d0a7c41ca05d"><td class="memItemLeft" align="right" valign="top">boost::circular_buffer&lt; <a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structxrpl_1_1metrics_1_1SingleMetrics.html#a351a819fa00fbecab221d0a7c41ca05d">rollingAvgAggregate</a> {30, 0ull}</td></tr>
+<tr class="separator:a351a819fa00fbecab221d0a7c41ca05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Run single metrics rolling average. </p>
 <p>Can be either average of a value per second or average of a value's sample per second. For instance, for transaction it makes sense to have transaction bytes and count per second, but for a number of selected peers to relay per transaction it makes sense to have sample's average. </p>
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00022">22</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00021">21</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5b76208330d4dcaaf72bf83f9ebbaebe" name="a5b76208330d4dcaaf72bf83f9ebbaebe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b76208330d4dcaaf72bf83f9ebbaebe">&#9670;&#160;</a></span>clock_type</h2>
@@ -146,7 +146,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00031">31</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00030">30</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -175,7 +175,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00028">28</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00027">27</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +204,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8cpp_source.html#l00074">74</a> of file <a class="el" href="TxMetrics_8cpp_source.html">TxMetrics.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8cpp_source.html#l00071">71</a> of file <a class="el" href="TxMetrics_8cpp_source.html">TxMetrics.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00032">32</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00031">31</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +237,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00033">33</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00032">32</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00034">34</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00033">33</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00035">35</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00034">34</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
@@ -285,23 +285,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00036">36</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00035">35</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>
-<a id="a02f26140c709d1f498d50011f8820243" name="a02f26140c709d1f498d50011f8820243"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f26140c709d1f498d50011f8820243">&#9670;&#160;</a></span>rollingAvgAggreg</h2>
+<a id="a351a819fa00fbecab221d0a7c41ca05d" name="a351a819fa00fbecab221d0a7c41ca05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351a819fa00fbecab221d0a7c41ca05d">&#9670;&#160;</a></span>rollingAvgAggregate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boost::circular_buffer&lt;<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>&gt; xrpl::metrics::SingleMetrics::rollingAvgAggreg {30, 0ull}</td>
+          <td class="memname">boost::circular_buffer&lt;<a class="elRef" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>&gt; xrpl::metrics::SingleMetrics::rollingAvgAggregate {30, 0ull}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00037">37</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TxMetrics_8h_source.html#l00036">36</a> of file <a class="el" href="TxMetrics_8h_source.html">TxMetrics.h</a>.</p>
 
 </div>
 </div>

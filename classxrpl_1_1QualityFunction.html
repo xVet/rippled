@@ -91,13 +91,18 @@ Collaboration diagram for xrpl::QualityFunction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classxrpl_1_1QualityFunction__coll__graph.png" border="0" usemap="#axrpl_1_1QualityFunction_coll__map" alt="Collaboration graph"/></div>
 <map name="axrpl_1_1QualityFunction_coll__map" id="axrpl_1_1QualityFunction_coll__map">
-<area shape="rect" title="Average quality of a path as a function of out: q(out) = m * out + b, where m = &#45;1 / poolGets,..." alt="" coords="64,225,221,251"/>
-<area shape="rect" href="classxrpl_1_1Number.html" title=" " alt="" coords="5,123,112,148"/>
-<area shape="poly" title=" " alt="" coords="79,157,135,224,131,227,75,160"/>
-<area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/types/integer.html" title=" " alt="" coords="11,5,106,31"/>
-<area shape="poly" title=" " alt="" coords="61,44,61,123,56,123,56,44"/>
-<area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/utility/optional.html" title=" " alt="" coords="137,123,317,148"/>
-<area shape="poly" title=" " alt="" coords="210,160,154,227,150,224,206,157"/>
+<area shape="rect" title="Average quality of a path as a function of out: q(out) = m * out + b, where m = &#45;1 / poolGets,..." alt="" coords="773,94,931,119"/>
+<area shape="rect" href="classxrpl_1_1Number.html" title="Number is a floating point type that can represent a wide range of values." alt="" coords="525,67,631,93"/>
+<area shape="poly" title=" " alt="" coords="646,84,773,96,773,102,645,89"/>
+<area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/types/integer.html" title=" " alt="" coords="5,37,108,62"/>
+<area shape="poly" title=" " alt="" coords="121,36,132,35,165,35,315,31,381,33,464,43,507,52,545,65,543,70,505,58,464,48,381,38,315,37,165,40,132,40,122,41"/>
+<area shape="rect" href="structxrpl_1_1MantissaRange.html" title="MantissaRange defines a range for the mantissa of a normalized Number." alt="" coords="198,67,353,93"/>
+<area shape="poly" title=" " alt="" coords="122,62,132,64,198,72,198,77,132,69,121,67"/>
+<area shape="poly" title=" " alt="" coords="366,77,524,77,524,83,366,83"/>
+<area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/utility/functional/reference_wrapper.html" title=" " alt="" coords="189,117,361,171"/>
+<area shape="poly" title=" " alt="" coords="374,120,524,89,525,94,375,126"/>
+<area shape="rect" target="_parent" href="http://en.cppreference.com/w/cpp/utility/optional.html" title=" " alt="" coords="488,117,668,142"/>
+<area shape="poly" title=" " alt="" coords="682,128,749,124,795,117,796,122,750,129,682,133"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -140,7 +145,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Average quality of a path as a function of <code>out</code>: q(out) = m * out + b, where m = -1 / poolGets, b = poolPays / poolGets. </p>
 <p>If CLOB offer then <code>m</code> is equal to 0 <code>b</code> is equal to the offer's quality. The function is derived by substituting <code>in</code> in q = out / in with the swap out formula for <code>in</code>: in = [(poolGets * poolPays) / (poolGets - out) - poolPays] / (1 - tfee) and combining the function for multiple steps. The function is used to limit required output amount when quality limit is provided in one path optimization. </p>
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00020">20</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00019">19</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f8042e1cd30697693bcec2e2c1dc31c" name="a1f8042e1cd30697693bcec2e2c1dc31c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f8042e1cd30697693bcec2e2c1dc31c">&#9670;&#160;</a></span>QualityFunction() <span class="overload">[1/2]</span></h2>
@@ -206,7 +211,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00074">74</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00070">70</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +234,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
 
 <p>Combines QF with the next step QF. </p>
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8cpp_source.html#l00023">23</a> of file <a class="el" href="QualityFunction_8cpp_source.html">QualityFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8cpp_source.html#l00020">20</a> of file <a class="el" href="QualityFunction_8cpp_source.html">QualityFunction.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +262,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8cpp_source.html#l00032">32</a> of file <a class="el" href="QualityFunction_8cpp_source.html">QualityFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8cpp_source.html#l00029">29</a> of file <a class="el" href="QualityFunction_8cpp_source.html">QualityFunction.cpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +283,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
 
 <p>Return true if the quality function is constant. </p>
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00061">61</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00057">57</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +302,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00067">67</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00063">63</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
@@ -322,7 +327,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00024">24</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00023">23</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
@@ -346,7 +351,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00026">26</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00025">25</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +375,7 @@ template&lt;typename TIn , typename TOut &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00028">28</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="QualityFunction_8h_source.html#l00027">27</a> of file <a class="el" href="QualityFunction_8h_source.html">QualityFunction.h</a>.</p>
 
 </div>
 </div>
